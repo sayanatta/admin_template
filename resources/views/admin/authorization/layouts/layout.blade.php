@@ -14,6 +14,6 @@
 <script src="{{url('/')}}/admin/plugins/jquery/jquery.min.js"></script>
 <script src="{{url('/')}}/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="{{url('/')}}/admin/js/adminlte.min.js"></script>
-@push('script')
+@stack('script')
 </body>
 </html>

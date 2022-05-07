@@ -15,6 +15,8 @@ class AuthorizationController extends Controller
 
     public function login_check(LoginValidation $request)
     {
+        if (Auth::attempt(array('email' => $request['email'], 'password' => $request['password'], 'user_type' => 'Admin'))) {
 
+        }
     }
 }
