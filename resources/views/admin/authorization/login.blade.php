@@ -13,7 +13,7 @@
                     @csrf
                     @method('POST')
                     <div class="input-group mb-3">
-                        <input type="email" name="email" value="{{old('email')}}" class="form-control"
+                        <input type="email" name="email" {{--value="{{old('email')}}"--}} value="admin@gmail.com" class="form-control"
                                placeholder="Email">
                         <div class="input-group-append">
                             <div class="input-group-text">
@@ -22,7 +22,7 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" name="password" class="form-control" placeholder="Password">
+                        <input type="password" name="password" value="123456" class="form-control" placeholder="Password">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>
@@ -50,5 +50,5 @@
         </div>
     </div>
     @push('script')
-    @endphp
+    @endpush
 @endsection
